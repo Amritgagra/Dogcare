@@ -1,0 +1,255 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-black";
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.black-shadow {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.black-shadow:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.white-shadow {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.white-shadow:hover {
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#title .title-img {
+  width: 60%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+#title .content {
+  padding-top: 4.5rem;
+}
+
+#title .img-logo {
+  width: 130px;
+}
+
+#title .navbar {
+  padding: 0 0;
+}
+
+#title .nav-item {
+  padding: 0px 18px;
+}
+
+#title .nav-link {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+#title .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#title .nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#feature {
+  position: relative;
+}
+
+#feature .feature-box {
+  padding: 4.5%;
+}
+
+#feature .feature-title {
+  font-size: 1.5rem;
+}
+
+#feature .icon {
+  color: rgba(255, 76, 104, 0.8);
+  margin-bottom: 1rem;
+}
+
+#feature .icon:hover {
+  color: #ff4c68;
+}
+
+#testimonial {
+  background-color: rgba(255, 76, 104, 0.8);
+}
+
+#testimonial .testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#testimonial .testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+#press {
+  background-color: rgba(255, 76, 104, 0.8);
+  padding-bottom: 3%;
+}
+
+#press .press-img {
+  width: 15%;
+  margin: 20px 20px 50px 0;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+#pricing .pricing-column {
+  padding: 3% 2%;
+}
+
+#pricing .price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#footer .social-icon {
+  margin: 20px 10px;
+  color: #000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer .social-icon:hover {
+  color: #ff4c68;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+  #title .big-heading {
+    font-size: 2.8rem;
+  }
+  #title .download-btn {
+    margin: 5% 3%;
+  }
+  #title .title-img {
+    position: static;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  #testimonial h2 {
+    font-size: 1.8rem;
+  }
+  #pricing {
+    padding: 30px;
+  }
+  #cta h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  #cta .icon {
+    margin: 10px 10px 20px;
+  }
+  #footer .social-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .big-heading {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .section-heading {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  #testimonial .testimonial-text {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
