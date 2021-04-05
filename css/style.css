@@ -39,7 +39,7 @@ h6 {
 
 .download-btn:hover {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .black-shadow {
@@ -49,7 +49,7 @@ h6 {
 
 .black-shadow:hover {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .white-shadow {
@@ -59,7 +59,7 @@ h6 {
 
 .white-shadow:hover {
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-          box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 .colored-section {
@@ -82,7 +82,7 @@ h6 {
 #title .title-img {
   width: 60%;
   -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  transform: rotate(25deg);
   position: absolute;
   right: 30%;
 }
@@ -117,20 +117,22 @@ h6 {
   width: 100%;
   background-color: #fff;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform-origin: right;
+  -webkit-transition: -webkit-transform 0.45s
+    cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 #title .nav-link:hover::after {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
 }
 
 #feature {
@@ -202,7 +204,7 @@ h6 {
 #footer .social-icon:hover {
   color: #ff4c68;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media (max-width: 992px) {
@@ -218,7 +220,7 @@ h6 {
   #title .title-img {
     position: static;
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   #testimonial h2 {
     font-size: 1.8rem;
@@ -239,6 +241,9 @@ h6 {
 }
 
 @media (max-width: 450px) {
+  body {
+    overflow: hidden;
+  }
   .big-heading {
     font-size: 2rem;
     line-height: 1.5;
